@@ -7,7 +7,7 @@
     
     ./gnome
     ./alacritty.nix
-    ./nautilus.nix
+    ./keepassxc.nix
     ./gnome-text-editor.nix
     ./virt-manager.nix
     ./neovim.nix
