@@ -8,7 +8,7 @@ in
     shell = pkgs.zsh;
     group = "users";
     description = "Celso Miranda";
-    icon = "${./avatar.png}";
+    #icon = "${./avatar.png}";
     extraGroups = [
       "wheel"
       "video"
