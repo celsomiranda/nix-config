@@ -9,7 +9,6 @@
     ./alacritty.nix
     ./keepassxc.nix
     ./gnome-text-editor.nix
-    ./virt-manager.nix
     ./neovim.nix
     ./neofetch
     ./htop.nix
