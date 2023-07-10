@@ -65,6 +65,10 @@
           specialArgs = { inherit inputs outputs; };
           modules = [ ./hosts/omenix ];
         };
+        isctex = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs outputs; };
+          modules = [ ./hosts/isctex ];
+        };
       };
     };
 }
