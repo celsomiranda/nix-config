@@ -4,6 +4,8 @@
       let content = lib.readFile "${pkgs.flameshot}/share/applications/org.flameshot.Flameshot.desktop";
       in lib.replaceStrings [ "/usr/bin/flameshot" ] [ "flameshot" ] content;
 
-    "autostart/${pkgs.signal-desktop.pname}.desktop".source = "${pkgs.signal-desktop}/share/applications/signal-desktop.desktop";
+   # "autostart/${pkgs.signal-desktop.pname}.desktop".source = "${pkgs.signal-desktop}/share/applications/signal-desktop.desktop";
+
+    "autostart/${pkgs.keepassxc.pname}.desktop".source = "${pkgs.keepassxc}/share/applications/keepassxc.desktop";
   };
 }
