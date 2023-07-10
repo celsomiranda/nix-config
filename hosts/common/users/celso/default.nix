@@ -1,4 +1,4 @@
-{ pkgs, config, icon, ... }:
+{ pkgs, config, ... }:
 let ifTheyExist = groups: builtins.filter (group: builtins.hasAttr group config.users.groups) groups;
 in
 {
@@ -8,7 +8,7 @@ in
     shell = pkgs.zsh;
     group = "users";
     description = "Celso Miranda";
-    #icon = "~/Pictures/avatars/doc.png";
+    icon = "${./avatar.png}";
     extraGroups = [
       "wheel"
       "video"
