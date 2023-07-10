@@ -14,6 +14,7 @@
     ./laptop-power-management.nix
     ./nix.nix
     ./zsh.nix
+    ./networking.nix
   ];
 
   home-manager = {
