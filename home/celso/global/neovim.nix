@@ -3,6 +3,7 @@
   home.packages = [
   pkgs.unzip
   pkgs.wget
+  pkgs.fd
   ];
 
   programs.neovim = {
