@@ -2,7 +2,7 @@
 # These should be stuff you would like to share with others, not your personal configurations.
 
 {
-  icon = import ./picture.nix;
+  icon = import ./icon.nix;
   # List your module files here
   # my-module = import ./my-module.nix;
 }
