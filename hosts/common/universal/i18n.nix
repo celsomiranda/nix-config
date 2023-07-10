@@ -9,7 +9,7 @@
       LC_MONETARY = "pt_PT.UTF-8";
       LC_NUMERIC = "pt_PT.UTF-8";
       LC_PAPER = "pt_PT.UTF-8";
-      LC_TIME = "en-GB.UTF-8";
+      LC_TIME = "en_GB.UTF-8";
     };
   };
 
