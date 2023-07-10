@@ -7,6 +7,7 @@ in
     isNormalUser = true;
     shell = pkgs.zsh;
     group = "users";
+    description = "Celso Miranda";
     #icon = "~/Pictures/avatars/doc.png";
     extraGroups = [
       "wheel"
