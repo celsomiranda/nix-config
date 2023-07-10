@@ -11,6 +11,7 @@
   environment.persistence = {
     "/persist" = {
       directories = [
+        "/etc/NetworkManager"
         "/var/lib/systemd"
         "/var/lib/nixos"
       ];
