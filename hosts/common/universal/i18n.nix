@@ -23,5 +23,5 @@
       pkgs.gsettings-desktop-schemas # system.locale
     ];
   };
-  time.timezone = "Europe/Lisbon";
+  time.timeZone = "Europe/Lisbon";
 }
