@@ -4,7 +4,6 @@ let
     pkgs.gnomeExtensions.alphabetical-app-grid
     pkgs.gnomeExtensions.appindicator
     pkgs.gnomeExtensions.caffeine
-    pkgs.gnomeExtensions.dash-to-dock
     pkgs.gnomeExtensions.date-menu-formatter
     pkgs.gnomeExtensions.emoji-selector
     pkgs.gnomeExtensions.tophat
