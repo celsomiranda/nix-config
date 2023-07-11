@@ -29,6 +29,11 @@ in {
         user = "git";
         identityFile = "${home}/.ssh/gitlab_key";
       };
+
+      "10.84.0.*" = {
+        user = "cjcma";
+        identityFile = "${home}/.ssh/id_iscte.pub";
+      };
     };
   };
 }
