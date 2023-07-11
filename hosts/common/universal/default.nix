@@ -5,7 +5,6 @@
     ./systemd-boot.nix
     ./ephemeral-btrfs.nix
     ./persistence.nix
-    ./fancy-motd.nix
     ./fwupd.nix
     ./git.nix
     ./gnome.nix

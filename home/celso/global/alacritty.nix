@@ -6,9 +6,7 @@
     enable = true;
 
     settings = {
-      shell.program = "${pkgs.zsh}/bin/zsh";
       working_directory = config.home.homeDirectory;
-      window.startup_mode = "Maximized";
 
       scrolling = {
         history = 10 * 1000;
@@ -31,12 +29,6 @@
         italic = {
           family = "Maple Mono NC NF";
           style = "Italic";
-        };
-      };
-
-      colors = {
-        primary = {
-          background = "#303030";
         };
       };
     };
