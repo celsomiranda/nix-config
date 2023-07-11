@@ -23,12 +23,28 @@
       enable = true;
 
       shortcut = "a";
-      keyMode = "emacs";
+      baseIndex = 1;
+      escapeTime = 1;
+      keyMode = "vi";
       mouse = true;
       clock24 = true;
       historyLimit = 10 * 1000;
       shell = "${pkgs.zsh}/bin/zsh";
       terminal = "screen-256color";
+      newSession = true;
+
+      plugins = with pkgs.tmuxPlugins; [
+        sensible
+        yank
+        {
+          plugin = dracula;
+          extraConfig = ''
+            set -g @dracula-show-battery false
+            set -g @dracula-show-powerline true
+            set -g @dracula-refresh-rate 10
+          '';
+        }
+      ];
 
       extraConfig = ''
         unbind %
@@ -38,13 +54,8 @@
         unbind '"'
         bind - split-window -v
         bind '-' split-window -v -c "#{pane_current_path}"
-
-        set -g message-command-style bg=black,fg=green
-        set -g message-style bg=green,fg=black
-        set -g mode-style 'reverse'
-        set -g status-fg black
-        set -g status-interval 1
-        set -g status-right ""
+        
+        set-option -sa terminal-features ',screen-256color:RGB'
       '';
     };
   };
