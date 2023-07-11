@@ -6,6 +6,7 @@
     #inputs.impermanence.nixosModules.home-manager.impermanence
     
     ./gnome
+    ./obsidian.nix
     ./alacritty.nix
     ./keepassxc.nix
     ./gnome-text-editor.nix
