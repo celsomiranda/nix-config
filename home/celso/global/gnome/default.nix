@@ -18,6 +18,16 @@ in {
   home.packages = [ pkgs.cantarell-fonts pkgs.maple-mono-SC-NF ]
     ++ [ pkgs.papirus-icon-theme pkgs.yaru-theme ] ++ extensions;
 
+  services.flameshot = {
+    enable = true;
+    settings = {
+      General = {
+        showDesktopNotification = false;
+        startupLaunch = true;
+      };
+    };
+  };
+
   dconf = {
     enable = true;
 
@@ -103,7 +113,7 @@ in {
       "org/gnome/desktop/wm/preferences" = {
         button-layout = ":minimize,maximize,close";
         num-workspaces = 1;
-        theme = "Yaru-blue";
+        theme = "Yaru-blue-dark";
       };
       "org/gnome/login-screen" = {
         enable-fingerprint-authentication = false;
@@ -166,8 +176,13 @@ in {
       "org/gnome/shell/extensions/date-menu-formatter" = {
         apply-all-panels = true;
         custom-locale = "";
+<<<<<<< Updated upstream
         font-size = 11;
         pattern = "dd.MM.yyyy || kk:mm:ss";
+=======
+        font-size = 12;
+        pattern = "dd-MM-yyyy | kk:mm:ss";
+>>>>>>> Stashed changes
         remove-messages-indicator = false;
         use-default-locale = true;
       };
@@ -247,7 +262,7 @@ in {
         window-buttons-placement = "auto";
         window-buttons-theme = "yaru";
       };
-      "org/gnome/shell/extensions/user-theme".name = "Yaru-blue";
+      "org/gnome/shell/extensions/user-theme".name = "Yaru-blue-dark";
       "org/gnome/shell/extensions/windowIsReady_Remover".prevent-disable = true;
       "org/gnome/shell/keybindings" = {
         focus-active-notification = [ ];
