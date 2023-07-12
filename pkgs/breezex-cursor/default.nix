@@ -1,4 +1,4 @@
-{ lib, stdenvNoCC, fetchFromGitHub, fetchurl, clickgen }:
+{ lib, stdenvNoCC, fetchFromGitHub, fetchurl, clickgen, python3Packages }:
 
 stdenvNoCC.mkDerivation rec {
   pname = "breezex-cursor";
@@ -11,7 +11,7 @@ stdenvNoCC.mkDerivation rec {
     sha256 = "sha256-K2pzJSrnhh94xbf5n512nj4/d+TxVw4CemMRi+qr5TE=";
   };
 
-  buildInputs = [ clickgen ];
+  buildInputs = [ clickgen python3Packages.attrs ];
 
   buildPhase = ''
     ctgen build.toml -s 16 24 32 -p x11 -d 'bitmaps/BreezeX-Dark' -n 'BreezeX-Dark' -c 'BreezeX Dark cursors.'
