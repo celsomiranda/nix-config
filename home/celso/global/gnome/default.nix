@@ -16,7 +16,7 @@ in {
 
   fonts.fontconfig.enable = true;
   home.packages = [ pkgs.cantarell-fonts pkgs.maple-mono-SC-NF ]
-    ++ [ pkgs.papirus-icon-theme pkgs.yaru-theme ] ++ extensions;
+    ++ [ pkgs.papirus-icon-theme pkgs.yaru-theme pkgs.breezex-cursor ] ++ extensions;
 
   services.flameshot = {
     enable = true;
@@ -49,6 +49,8 @@ in {
         font-name = "Cantarell 11";
         gtk-theme = "Yaru-blue";
         icon-theme = "Papirus";
+        cursor-theme = "BreezeX-Dark";
+
         monospace-font-name = "Maple Mono SC NF";
         show-battery-percentage = true;
       };

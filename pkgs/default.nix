@@ -3,4 +3,5 @@
 
 { pkgs ? (import ../nixpkgs.nix) { } }: {
   # example = pkgs.callPackage ./example { };
+  breezex-cursor = pkgs.callPackage ./breezex-cursor { };
 }
