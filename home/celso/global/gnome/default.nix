@@ -8,6 +8,7 @@ let
     pkgs.gnomeExtensions.emoji-selector
     pkgs.gnomeExtensions.tophat
     pkgs.gnomeExtensions.transparent-top-bar-adjustable-transparency
+    pkgs.gnomeExtensions.user-themes
     pkgs.gnomeExtensions.unite
     pkgs.gnomeExtensions.window-is-ready-remover
   ];
