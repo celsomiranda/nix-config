@@ -30,6 +30,7 @@
     fsType = "vfat";
   };
 
+  services.pcscd.enable = true;
 
 # Increase open file limit for sudoers
   security.pam.loginLimits = [
