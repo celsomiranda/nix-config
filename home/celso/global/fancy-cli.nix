@@ -25,11 +25,17 @@
 
     fzf = {
       enable = true;
+<<<<<<< HEAD
 
       enableBashIntegration = true;
       enableFishIntegration = true;
       enableZshIntegration = true;
 
+=======
+      enableBashIntegration = true;
+      enableFishIntegration = true;
+      enableZshIntegration = true;
+>>>>>>> 8e5793d (initial apps refactoring)
       historyWidgetOptions = [ "--no-multi" ];
     };
   };
