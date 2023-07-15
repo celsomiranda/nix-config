@@ -6,17 +6,15 @@
     #inputs.impermanence.nixosModules.home-manager.impermanence
     
     ./gnome
+    ./extra.nix
+    ./fancy-cli.nix
     ./obsidian.nix
     ./alacritty.nix
-    ./keepassxc.nix
     ./gnome-text-editor.nix
     ./neovim.nix
     ./neofetch
     ./htop.nix
-    ./bat.nix
-    ./ripgrep.nix
     ./direnv.nix
-    ./fzf.nix
     ./git.nix
     ./ssh.nix
     ./starship.nix
