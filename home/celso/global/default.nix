@@ -8,7 +8,6 @@
     ./gnome
     ./extra.nix
     ./fancy-cli.nix
-    ./obsidian.nix
     ./alacritty.nix
     ./gnome-text-editor.nix
     ./neovim.nix

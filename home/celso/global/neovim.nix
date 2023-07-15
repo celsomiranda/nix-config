@@ -1,9 +1,9 @@
 { pkgs, ...}: {
 
-  home.packages = [
-  pkgs.unzip
-  pkgs.wget
-  pkgs.fd
+  home.packages = with pkgs; [
+    unzip
+    wget
+    fd
   ];
 
   programs.neovim = {
@@ -11,5 +11,18 @@
     viAlias = true;
     vimAlias = true;
     vimdiffAlias = true;
+    withNodeJs = true;
+    withPython3 = true;
+    withRuby = false;
+    plugins = with pkgs.vimPlugins; [
+      nvim-treesitter.withAllGrammars
+    ];
+
+    extraPackages = with pkgs; [
+      rnix-lsp
+      nixfmt
+      luaformatter
+      sumneko-lua-language-server
+    ];
   };
 }

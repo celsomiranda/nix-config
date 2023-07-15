@@ -1,4 +1,9 @@
 {pkgs, ...}:
 {
-  home.packages = [ pkgs.keepassxc pkgs.obsidian ];
+  home.packages = with pkgs; [ 
+    keepassxc
+    obsidian
+    signal-desktop
+    yubioath-flutter
+    ];
 }

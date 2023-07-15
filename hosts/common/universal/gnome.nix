@@ -14,6 +14,8 @@
     };
 
     udev.packages = [ pkgs.gnome.gnome-settings-daemon ];
+
+    pcscd.enable = true;
   };
 
   systemd.services."display-manager".after = [ "network-online.target" "systemd-resolved.service" ];
